@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="StartButton" layoutX="123.0" layoutY="191.0" onAction="#buttonClicked" prefHeight="68.0" prefWidth="358.0" style="-fx-background-color: #009cff;" text="Начать" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font></Button>
+        <ComboBox fx:id="Choise" layoutX="131.0" layoutY="120.0" prefHeight="39.0" prefWidth="341.0" promptText="Выбор Упражнения" style="-fx-background-color: #08ce6f;" />
+        <TextField fx:id="TIMER" editable="false" layoutX="369.0" layoutY="276.0" prefHeight="25.0" prefWidth="34.0" text="0" />
+        <Label fx:id="CaloryMeter" layoutX="366.0" layoutY="314.0" text="0">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <TableView fx:id="tableTask" layoutY="363.0" prefHeight="282.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="ExercizeName" prefWidth="233.0" text="Вид занятия/Exercize" />
+                <TableColumn fx:id="ExercizeTime" prefWidth="172.0" text="Время/Time" />
+                <TableColumn fx:id="ExercizeCalory" prefWidth="194.0" text="Калории/Calories" />
+            </columns>
+        </TableView>
+        <Label layoutX="180.0" layoutY="311.0" prefHeight="17.0" prefWidth="176.0" text="Калорий потрачено">
+            <font>
+                <Font size="17.0" />
+            </font></Label>
+        <Label layoutX="178.0" layoutY="275.0" text="Продолжительность">
+            <font>
+                <Font size="19.0" />
+            </font></Label>
+        <Label layoutX="166.0" layoutY="48.0" text="Фитнес-Трекер">
+            <font>
+                <Font name="System Bold Italic" size="35.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="75.0" fitWidth="100.0" layoutX="489.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ASSETS/iconfinder_Personal_Trainer1_2315989.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
